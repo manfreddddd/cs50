@@ -14,6 +14,7 @@ def dollars_to_float(d):
 
     '''  
     amt=float(d.replace("$",""))
+    # amount=d[1:]
     return amt
 
 
@@ -21,12 +22,16 @@ def dollars_to_float(d):
 def percent_to_float(p):
     '''
     which should accept a str as input (formatted as ##%, wherein 
-    each # is a decimal digit), remove the trailing %, and return 
+    each # is a decimal digit), 
+    remove the trailing %, and return 
     the percentage as a float. For instance, given 15% as input, 
     it should return 0.15
     '''
     total=float(p.replace("%",""))/100
+    
     return total
+
+
 
 
 
